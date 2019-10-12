@@ -15,20 +15,23 @@
 
 		<?php 
 
+			$nome = 'João';
+			$saldo = 670.50;
+
 		?>
 
 		<h4>Nome: </h4>
-		<p></p>
+		<p><?php echo $nome; ?></p>
 
 		<br>
 
 		<h4>Saldo: </h4>
-		<p></p>
+		<p><?php echo $saldo ?></p>
 
 		<br>
 
 		<h4>Mensagem: </h4>
-		<p></p>
+		<p><?php echo "Olá $nome, o seu saldo é: $saldo"; ?></p>
 		
 
 			
