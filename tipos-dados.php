@@ -20,12 +20,12 @@
 		?>
 
 		<h4>Tipo da variável $nome: </h4>
-		<p></p>
+		<p><?php var_dump($nome) ?></p>
 
 		<br>
 
 		<h4>Tipo da variável $saldo: </h4>
-		<p></p>
+		<p><?php var_dump($saldo) ?></p>
 		
 
 			
