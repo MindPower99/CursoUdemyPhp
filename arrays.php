@@ -13,27 +13,38 @@
 		
 		<h3>Meus Cursos</h3>
 
-			<h4>Conteúdo do Array: </h4>
-			<p><?php  ?></p>
-			<br>
+			<?php  $cursos = array(
+									"Excel" => array(
+												"n_alunos" => 400, "titulo" => "Do zero ao avançado", "url" => "www.udemy.com", "aval" => 200
+													),
+
+									"HTML-CSS" => array (
+												"n_alunos" => 300, "titulo" => "Aprenda desenvolver web", "url" => "www.udemy.com", "aval" => 150
+													),
+
+									"Python" =>  array (
+												"n_alunos" => 280, "titulo" => "Programe em Python", "url" => "www.udemy.com", "aval" => 90
+													)
+								);
+			?>
 
 
 		<h3>Informação do Curso</h3>
 
 			<h4>Título: </h4>
-			<p><?php  ?></p>
+			<p><?php  echo $cursos['Excel']['titulo']; ?></p>
 			<br>
 
 			<h4>Número de Avaliações: </h4>
-			<p><?php  ?></p>
+			<p><?php  echo $cursos['Excel']['n_alunos']; ?></p>
 			<br>
 
-			<h4>URL: </h4>
-			<p><?php  ?></p>
+			<h4>AVALIAÇÕES: </h4>
+			<p><?php  echo $cursos['Excel']['aval']; ?></p>
 			<br>
 
 			<h4>URL da foto: </h4>
-			<p><?php  ?></p>
+			<p><?php  echo $cursos['Excel']['url'];  ?></p>
 			<br>
 		
 
